@@ -11,9 +11,19 @@ scoop bucket add herosizy https://github.com/HeroSizy/scoop-bucket
 scoop install herosizy/mytwig
 ```
 
-It needs 64-bit Windows 10 or 11, x64 or ARM64 (Scoop picks the right build), and [Git](https://git-scm.com) 2.32 or later (`scoop install git`). MyTwig is installed in Scoop's folder, `~\scoop\apps\mytwig`, from the release's portable archive, with a Start menu shortcut, **MyTwig**. Nothing is run as administrator.
+You must have:
 
-MyTwig isn't code-signed yet. If Microsoft Defender SmartScreen warns you the first time you open it, click **More info**, then **Run anyway**.
+- 64-bit Windows 10 or 11, x64 or ARM64. Scoop selects the correct build.
+- [Git](https://git-scm.com) 2.32 or later (`scoop install git`).
+
+Scoop installs MyTwig from the portable archive of the release into the Scoop folder, `~\scoop\apps\mytwig`. It also adds a Start menu shortcut, **MyTwig**. Scoop does not run anything as administrator.
+
+> **NOTE:** MyTwig does not have a code signature yet. Thus, Microsoft Defender SmartScreen can show a warning the first time that you open MyTwig.
+
+If SmartScreen shows a warning, do these steps:
+
+1. Click **More info**.
+2. Click **Run anyway**.
 
 ## Update
 
@@ -21,7 +31,7 @@ MyTwig isn't code-signed yet. If Microsoft Defender SmartScreen warns you the fi
 scoop update mytwig
 ```
 
-MyTwig's own updater (**Settings → General → Updates**) works in a Scoop install too, but Scoop then keeps listing the version it installed. Prefer `scoop update`, and you can turn the app's background checks off in Settings.
+The updater of MyTwig (**Settings → General → Updates**) also works in a Scoop install. But then Scoop continues to show the version that it installed. Thus, we recommend `scoop update`. You can stop the background checks of the app in Settings.
 
 ## Uninstall
 
@@ -29,8 +39,10 @@ MyTwig's own updater (**Settings → General → Updates**) works in a Scoop ins
 scoop uninstall mytwig
 ```
 
-Your settings stay in `%APPDATA%\MyTwig`, and the cache and logs in `%LOCALAPPDATA%\MyTwig`; delete those folders to remove them too. Tokens MyTwig saved stay in Windows Credential Manager; sign out in **Settings → Accounts** first to remove them.
+Your settings stay in `%APPDATA%\MyTwig`. The cache and the logs stay in `%LOCALAPPDATA%\MyTwig`. To remove them too, delete these folders.
+
+> **NOTE:** The tokens that MyTwig keeps in Windows Credential Manager also stay. To remove them, click **Sign Out** in **Settings → Accounts** before you uninstall.
 
 ## Problems
 
-Report problems with MyTwig, or with this manifest, in [MyTwig's issues](https://github.com/HeroSizy/mytwig-releases/issues). The manifest in this repository is updated automatically after each release.
+Report problems with MyTwig, or with this manifest, in [MyTwig's issues](https://github.com/HeroSizy/mytwig-releases/issues). After each release, an automatic process updates the manifest in this repository.
