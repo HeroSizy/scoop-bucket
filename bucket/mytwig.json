@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "description": "Native Git client with a commit graph",
+    "homepage": "https://github.com/HeroSizy/mytwig-releases",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/HeroSizy/mytwig-releases#license-and-terms"
+    },
+    "notes": [
+        "MyTwig keeps its settings in %APPDATA%\\MyTwig and its cache and logs in %LOCALAPPDATA%\\MyTwig.",
+        "Update it with 'scoop update mytwig'. Its own updater works too, but Scoop then keeps listing the version it installed."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.0/mytwig-0.2.0-windows-amd64.tar.gz",
+            "hash": "780185cc45f97c070ae39e44689acb1d96b446dff0551bee2e905aef98ade5f6"
+        },
+        "arm64": {
+            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.0/mytwig-0.2.0-windows-arm64.tar.gz",
+            "hash": "8b8aed3b0076d12ccd4cb8556773b0627ad8938e9816660a6316f55fbb6b71ef"
+        }
+    },
+    "shortcuts": [
+        [
+            "MyTwig.exe",
+            "MyTwig"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/HeroSizy/mytwig-releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v$version/mytwig-$version-windows-amd64.tar.gz"
+            },
+            "arm64": {
+                "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v$version/mytwig-$version-windows-arm64.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS",
+            "regex": "$sha256\\s+\\*?$basename"
+        }
+    }
+}
