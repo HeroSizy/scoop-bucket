@@ -1,5 +1,5 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Native Git client with a commit graph",
     "homepage": "https://github.com/HeroSizy/mytwig-releases",
     "license": {
@@ -12,12 +12,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.0/mytwig-0.2.0-windows-amd64.tar.gz",
-            "hash": "780185cc45f97c070ae39e44689acb1d96b446dff0551bee2e905aef98ade5f6"
+            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.1/mytwig-0.2.1-windows-amd64.tar.gz",
+            "hash": "452dd1c18b125f8d9b68b668213069a913acf8702fe947e7dddcf86c585a7f93"
         },
         "arm64": {
-            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.0/mytwig-0.2.0-windows-arm64.tar.gz",
-            "hash": "8b8aed3b0076d12ccd4cb8556773b0627ad8938e9816660a6316f55fbb6b71ef"
+            "url": "https://github.com/HeroSizy/mytwig-releases/releases/download/v0.2.1/mytwig-0.2.1-windows-arm64.tar.gz",
+            "hash": "d0f05e87e7f9f14c3b784e112e342534babf0524355be51143e7804541721fbd"
         }
     },
     "shortcuts": [
